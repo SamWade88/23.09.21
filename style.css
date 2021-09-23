@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+section{
+	height: 100vh;
+	scroll-snap-align:  start;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+.one{
+	background: blueviolet;
+}
+.two{
+	background: orangered;
+}
+.three{
+	background: #7E7F9A;
+}
+.four{
+	background: seagreen;
+}
+
+.container{
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	height: 100vh;
+}
+.G{
+	width: 150px;
+	height: 300px;
+	animation: walk 10s steps(10) infinite,
+	forward 15s linear infinite;
+}
+
+@keyframes walk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: -1472px;
+	}
+}
+@keyframes forward{
+	0%{
+		transform: translateX(-50%);
+	}
+	100%{
+		transform: translateX(1250%);
+	}
+}
