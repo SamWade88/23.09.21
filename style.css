@@ -12,6 +12,10 @@ section{
 	flex-wrap: wrap;
 	align-content: flex-end;
 }
+h1{
+	color: whitesmoke;
+	text-shadow: 0 2px black;
+}
 
 .one{
 	background: blueviolet;
